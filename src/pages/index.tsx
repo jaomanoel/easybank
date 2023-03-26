@@ -1,11 +1,10 @@
-import { Inter } from "next/font/google";
+import React from "react";
+import { Home } from "@/templates/Home";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-  return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  );
+export default function Layout() {
+    return (
+        <>
+            <Home />
+        </>
+    );
 }
