@@ -11,9 +11,13 @@ export const Header = () => {
     };
 
     return (
-        <div className="w-full h-48 md:h-90 flex items-center justify-center">
-            <div className="w-full h-full max-w-screen-xl flex flex-col md:flex-row justify-center items-center px-16 xl:px-0 bg-white">
-                <div className="w-full h-full flex items-center justify-between">
+        <div className="w-full h-48 md:h-90 flex items-center justify-center ">
+            <div className="w-full h-full max-w-screen-default flex flex-col md:flex-row justify-center items-center bg-white">
+                <div
+                    className={`w-full h-full flex items-center justify-between bg-white z-[999] px-16 xl:px-0 ${
+                        menu && "fixed h-fit"
+                    } `}
+                >
                     <img
                         className="relative w-80 h-60 object-contain"
                         src="./icons/logo.svg"
@@ -59,8 +63,9 @@ export const Header = () => {
                 </div>
 
                 {menu && (
-                    <div className="md:hidden overflow-hidden h-full w-full bg-grayish-blue py-16 px-16 fixed top-48">
-                        <div className="w-full flex items-center justify-center py-20 bg-white rounded-lg">
+                    <div className="md:hidden overflow-hidden h-full w-full fixed px-16 top-0 z-[100]">
+                        <div className="w-full overflow-hidden h-full opacity-50 bg-grayish-blue fixed top-0 left-0 -z-10"></div>
+                        <div className="w-full overflow-hidden flex items-center justify-center py-20 mt-60 px-16 bg-white rounded-lg z-50">
                             <nav className="w-full">
                                 <ul className="w-full flex flex-col items-center gap-20">
                                     {[
