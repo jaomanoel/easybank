@@ -20,7 +20,7 @@ function Home() {
         <div className={public_sans.className}>
             <Header />
             <Hero />
-            <section className="w-full bg-light-grayish-blue flex items-center justify-center md:-mt-100 py-60 md:py-30 z-50">
+            <section className="w-full bg-light-grayish-blue flex items-center justify-center md:-mt-100 py-60 md:py-30 z-50 relative">
                 <div className="w-full max-w-screen-default flex flex-col items-center md:items-start gap-24 px-16 xl:px-16 ">
                     <h2 className="text-dark-blue text-[3.2rem] md:text-[4.5rem] text-center md:text-left leading-tight">
                         Why choose Easybank?

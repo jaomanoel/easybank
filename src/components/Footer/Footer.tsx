@@ -1,5 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import { SVGFacebook } from "@/styles/icons/SVGFacebook";
+import { SVGInstagram } from "@/styles/icons/SVGInstagram";
 import { SVGLogo } from "@/styles/icons/SVGLogo";
+import { SVGPinterest } from "@/styles/icons/SVGPinterest";
+import { SVGTwitter } from "@/styles/icons/SVGTwitter";
+import { SVGYoutube } from "@/styles/icons/SVGYoutube";
 import React from "react";
 import { Button } from "../Button";
 
@@ -12,48 +17,43 @@ function Footer() {
                         <SVGLogo fill="white" />
                         <ul className="flex items-center gap-8">
                             <li>
-                                <a className="hover:text-lime-green" href="#">
-                                    <img
-                                        className="w-20 h-20"
-                                        src="./icons/icon-facebook.svg"
-                                        alt="facebook"
-                                    />
+                                <a
+                                    className="[&>svg]:hover:fill-lime-green [&>svg]:fill-white"
+                                    href="#"
+                                >
+                                    <SVGFacebook />
                                 </a>
                             </li>
                             <li>
-                                <a className="hover:text-lime-green" href="#">
-                                    <img
-                                        className="w-20 h-20"
-                                        src="./icons/icon-youtube.svg"
-                                        alt="youtube"
-                                    />
+                                <a
+                                    className="[&>svg]:hover:fill-lime-green [&>svg]:fill-white"
+                                    href="#"
+                                >
+                                    <SVGYoutube />
                                 </a>
                             </li>
                             <li>
-                                <a className="hover:text-lime-green" href="#">
-                                    <img
-                                        className="w-20 h-20"
-                                        src="./icons/icon-twitter.svg"
-                                        alt="twitter"
-                                    />
+                                <a
+                                    className="[&>svg]:hover:fill-lime-green [&>svg]:fill-white"
+                                    href="#"
+                                >
+                                    <SVGTwitter />
                                 </a>
                             </li>
                             <li>
-                                <a className="hover:text-lime-green" href="#">
-                                    <img
-                                        className="w-20 h-20"
-                                        src="./icons/icon-pinterest.svg"
-                                        alt="pinterest"
-                                    />
+                                <a
+                                    className="[&>svg]:hover:fill-lime-green [&>svg]:fill-white"
+                                    href="#"
+                                >
+                                    <SVGPinterest />
                                 </a>
                             </li>
                             <li>
-                                <a className="hover:text-lime-green" href="#">
-                                    <img
-                                        className="w-20 h-20"
-                                        src="./icons/icon-instagram.svg"
-                                        alt="instagram"
-                                    />
+                                <a
+                                    className="[&>svg]:hover:fill-lime-green [&>svg]:fill-white"
+                                    href="#"
+                                >
+                                    <SVGInstagram />
                                 </a>
                             </li>
                         </ul>
