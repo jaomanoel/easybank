@@ -4,8 +4,8 @@ import { Button } from "../Button";
 
 function Hero() {
     return (
-        <div className="w-full h-full flex flex-col items-center justify-center md:justify-start relative overflow-hidden bg-very-light-gray">
-            <picture className="w-full h-full absolute">
+        <div className="w-full h-full flex flex-col items-center justify-center md:justify-start relative overflow-hidden bg-very-light-gray pb-60 md:p-0">
+            <picture className="w-full absolute top-0">
                 <source
                     media="(min-width: 768px)"
                     srcSet="./images/bg-intro-desktop.svg"
@@ -16,7 +16,7 @@ function Hero() {
                     alt="bg intro"
                 />
             </picture>
-            <div className="w-full max-w-screen-default flex flex-col md:flex-row-reverse items-center justify-start md:justify-between z-40 px-16 lg:px-0">
+            <div className="w-full max-w-screen-default flex flex-col md:flex-row-reverse items-center justify-start md:justify-between z-[60] px-16 xl:px-0">
                 <img
                     className="max-w-none w-360 md:w-[80rem] h-430 md:h-[80rem] -mt-[12.5rem] md:-mr-[31rem]"
                     src="./images/image-mockups.png"
