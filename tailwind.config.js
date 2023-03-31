@@ -14,7 +14,7 @@ module.exports = {
             md: "768px",
             lg: "1024px",
             xl: "1280px",
-            default: "1140px",
+            default: "1440px",
         },
         fontSize: {
             xs: "1.2rem", // 12px

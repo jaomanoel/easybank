@@ -5,6 +5,7 @@ import { Public_Sans } from "next/font/google";
 import { Hero } from "@/components/Hero";
 import { useCard } from "@/hooks/useCard";
 import { Card } from "@/components/Card";
+import { Articles } from "@/components/Articles";
 
 const public_sans = Public_Sans({
     subsets: ["latin"],
@@ -15,10 +16,10 @@ function Home() {
     const card = useCard();
 
     return (
-        <div className={public_sans.className + " h-[100vh]"}>
+        <div className={public_sans.className}>
             <Header />
             <Hero />
-            <section className="w-full bg-light-grayish-blue flex items-center justify-center md:-translate-y-100 py-60 md:py-30">
+            <section className="w-full bg-light-grayish-blue flex items-center justify-center md:-mt-100 py-60 md:py-30 z-50">
                 <div className="w-full max-w-screen-default flex flex-col items-center md:items-start gap-24 px-16 xl:px-16 ">
                     <h2 className="text-dark-blue text-[3.2rem] md:text-[4.5rem] text-center md:text-left leading-tight">
                         Why choose Easybank?
@@ -41,6 +42,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <Articles />
         </div>
     );
 }
