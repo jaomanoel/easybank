@@ -6,6 +6,7 @@ import { Hero } from "@/components/Hero";
 import { useCard } from "@/hooks/useCard";
 import { Card } from "@/components/Card";
 import { Articles } from "@/components/Articles";
+import { Footer } from "@/components/Footer/Footer";
 
 const public_sans = Public_Sans({
     subsets: ["latin"],
@@ -43,6 +44,7 @@ function Home() {
                 </div>
             </section>
             <Articles />
+            <Footer />
         </div>
     );
 }
